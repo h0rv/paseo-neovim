@@ -1,0 +1,25 @@
+{
+  "name": "paseo-plugin-editor-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A credential-free deterministic provider that safely creates and edits real TypeScript demo files in your workspace.",
+  "files": [
+    "paseo-plugin.json",
+    "index.server.ts",
+    "server",
+    "icon.svg",
+    "README.md",
+    "!server/**/*.test.ts"
+  ],
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@getpaseo/plugin": "^0.14.0-beta.1",
+    "@types/node": "^20.9.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.6"
+  }
+}

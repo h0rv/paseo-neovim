@@ -1,0 +1,38 @@
+{
+  "name": "paseo-plugin-neovim",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Use Neovim as your file editor in Paseo.",
+  "bugs": {
+    "url": "https://github.com/h0rv/paseo-neovim/issues"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h0rv/paseo-neovim.git"
+  },
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "typecheck:demo": "tsc --noEmit -p examples/editor-demo/tsconfig.json",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run typecheck:demo && npm test"
+  },
+  "dependencies": {
+    "neovim": "5.5.0",
+    "winston": "3.15.0"
+  },
+  "devDependencies": {
+    "@getpaseo/plugin": "0.14.0-beta.1",
+    "@types/node": "^20.9.0",
+    "@types/react": "~19.2.0",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.7",
+    "zod": "4.4.3"
+  },
+  "engines": {
+    "node": ">=22.20.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "id": "neovim",
+  "name": "Neovim",
+  "description": "Edit workspace files in native Neovim with your own configuration and plugins.",
+  "requirements": { "paseo": ">=0.14.0" },
+  "build": [["npm", "install", "--omit=dev", "--ignore-scripts", "--no-audit", "--no-fund"]]
+}

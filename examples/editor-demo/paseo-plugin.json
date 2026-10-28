@@ -1,0 +1,6 @@
+{
+  "id": "editor-demo",
+  "name": "Editor demo",
+  "description": "Create and edit real, dedicated TypeScript demo files without a model, CLI, or credentials.",
+  "requirements": { "paseo": ">=0.14.0-beta.1" }
+}
