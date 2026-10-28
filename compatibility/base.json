@@ -1,5 +1,0 @@
-{
-  "upstream": "https://github.com/getpaseo/paseo.git",
-  "baseCommit": "33faacc0556e71dd0604413953385d497698cc4d",
-  "patch": "paseo.patch"
-}

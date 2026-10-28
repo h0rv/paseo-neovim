@@ -4,7 +4,9 @@ Neovim for [Paseo](https://github.com/getpaseo/paseo) opens workspace files in N
 
 ## Install
 
-Neovim and Git are required on the daemon host, not on the browser's machine. The required Paseo app and daemon setup is in the [compatibility guide](compatibility/README.md).
+Neovim and Git are required on the daemon host, not on the browser's machine.
+
+This plugin requires the APIs in [Paseo PR #8147](https://github.com/getpaseo/paseo/pull/8147). They are not available in Paseo 0.13.2.
 
 ```sh
 paseo plugin install github:h0rv/paseo-neovim
@@ -36,9 +38,9 @@ Neovim keeps running when a panel closes. Save and use `:qa` to exit. Persistent
 
 Neovim runs with the daemon user's permissions.
 
-## Development
+## Demo
 
-The [development guide](compatibility/README.md#develop-the-standalone-plugin) covers setup and checks with mise. The [demo provider](examples/editor-demo/README.md) creates and edits files without a model or API key.
+The [demo provider](examples/editor-demo/README.md) creates and edits files without a model or API key.
 
 ## License
 

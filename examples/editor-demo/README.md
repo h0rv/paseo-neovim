@@ -44,15 +44,3 @@ Interrupting or closing cancels work before the next file operation. The provide
 
 Completed operations remain on disk if a later operation fails or is canceled. The error reports this, and the tool rows reflect the operations that occurred. Filesystem errors appear as errors rather than simulated success. Do not use concurrent external changes to collaborate on these demo files.
 
-## Development
-
-Run these commands from the root of the `paseo-neovim` repository. First build the patched Paseo checkout as described in the [compatibility guide](../../compatibility/README.md).
-
-```sh
-npm ci
-npm install --no-save --package-lock=false /path/to/patched-paseo/packages/plugin
-npm test -- examples/editor-demo/server/files.test.ts examples/editor-demo/server/provider.test.ts
-npm run typecheck:demo
-```
-
-Repeat the local SDK install after every `npm ci`. Use Node.js 24, as selected by the repository's `mise.toml`.
